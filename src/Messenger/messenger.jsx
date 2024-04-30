@@ -36,7 +36,7 @@ const Messenger = () => {
   //socketio
   const [socket, setSocket] = useState(null)
   const socketRef = useRef();
-  const host = "http://chatdemo-5p57.onrender.com";
+  const host = "https://chatdemo-5p57.onrender.com";
 
   useEffect(() => {
     socketRef.current = socketIOClient.connect(host)
